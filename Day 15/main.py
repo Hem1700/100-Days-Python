@@ -56,7 +56,6 @@ while is_on:
     else:
         drink = MENU[coffee]
 
-
     check_sufficient(drink["ingredients"])
     payment = process_coins()
     if transaction_successful(payment, drink["cost"]):
